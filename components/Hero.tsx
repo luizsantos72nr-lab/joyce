@@ -5,11 +5,14 @@ import { EXPERT_PHOTO_HERO } from '../constants';
 export const Hero: React.FC = () => {
   return (
     <section className="relative pt-6 pb-12 lg:pt-12 bg-gradient-to-b from-stone-50 to-white overflow-hidden">
-      <div className="container mx-auto px-4 max-w-6xl">
+      {/* Sombreado Amarelo Ouro no topo */}
+      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-primary/25 via-primary/5 to-transparent pointer-events-none z-0"></div>
+
+      <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           
           {/* Text Content */}
-          <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-10">
+          <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
             <div className="inline-block px-4 py-1.5 mb-4 bg-primary/10 text-primary rounded-full text-sm font-bold tracking-wider uppercase">
               Cirurgiã-Dentista em Claudio-MG
             </div>
